@@ -1,0 +1,274 @@
+.pagelevel{
+    position:relative;
+    width: 1580px;
+    height: 30px;
+    top: 15px;
+    translate: translate(0,0);
+    margin-left: 50%;
+    transform: translate(-50%,0);
+}
+
+.pagelevel a{
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+    left: 50px;
+}
+
+.pagelevel a:hover{
+    color: #8DCC78;
+}
+
+.choice{
+    position: relative;
+    width: 1580px;
+    top: 0px;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    display: flex;
+}
+
+.show{
+    width: 600px;
+    font-size: 0px;
+    margin-left: 150px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.smallpic img{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+.bigpic img{
+    width: 400px;
+    height: 400px;
+    margin: 50px;
+    border: 2px solid #ACB1C6;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+
+.smallpic img:hover{
+    border: 2px solid #8DCC78;
+}
+
+.purchase{
+    position: relative;
+    display: inline-block;
+    top:40px;
+    background-color: #ffffff;
+    width: 600px;
+    padding: 50px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+.purchase p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #ACB1C6;
+}
+
+.purchase  h1{
+    font-size: 20px;
+}
+
+.purchase span.price{
+    font-size: 40px;
+    font-weight: 900;
+    color: #ff3228;
+}
+
+.purchase span.oldprice{
+    text-decoration: line-through;
+    font-size: 24px;
+}
+
+.purchase input{
+    font-size: 24px;
+}
+
+.choice1, .choice2{
+    margin-bottom: 40px;
+}
+
+.rdo input{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    display: none;
+}
+
+.rdo label{
+    font-size: 24px;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 20px;
+}
+
+.rdo label::before{
+    content: "";
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    margin-right: 20px;
+    background: url(../image/select.png);
+}
+
+.rdo input:checked+label::before{
+    background-image: url(../image/selected.png);
+}
+
+.count{
+    width: 200px;
+    display: inline-flex;
+}
+
+.count input{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #8DCC78;
+}
+
+.left input,.right input{
+    display: none;
+}
+
+.left label{
+    content: "";
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    cursor: pointer;
+    margin-right: 20px;
+    background: url(../image/left.png);
+}
+
+.right label{
+    content: "";
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    margin-left: 20px;
+    cursor: pointer;
+    background: url(../image/right.png);
+}
+
+.confirm input{
+    display: none;
+}
+
+.confirm label{
+    content: "";
+    margin-top: 50px;
+    width: 300px;
+    height: 85px;
+    display: inline-flex;
+    cursor: pointer;
+    background: url(../image/cart.png);
+}
+
+.itr{
+    position:relative;
+    width: 1580px;
+    margin-top: 100px;
+    translate: translate(0,0);
+    margin-left: 50%;
+    transform: translate(-50%,0);    
+}
+
+.itr h1{
+    margin-left: 200px;
+    width: 150px;
+    text-align: center;
+    border: 1px solid #8DCC78;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+    background-color: #ffffff;
+}
+
+.itr img{
+    width: 1280px;
+    margin-left: 150px;
+}
+
+.guess{
+    width: 1580px;
+    height: auto;
+    overflow: hidden;
+    margin-left: 50%;
+    margin-top: 50px;
+    transform: translate(-50%,0);
+}
+
+.title{
+    margin-left: 140px;
+    width: 200px;
+}
+
+.products{
+    width: 1580px;
+    height: auto;
+    overflow: hidden;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    font-size: 0px;
+}
+
+.products li{
+    width:1400px;
+    margin-left: 140px;
+}
+
+.products a{
+    display: inline-block;
+    background-color: #FFFFFF;
+    border: 1px solid #ACB1C6;
+    margin:0px;
+    width: 250px;
+    height: 400px;
+}
+
+.products a img{
+    width: 250px;
+    height: 250px;
+    margin: 0px;
+}
+
+.products a h2{
+    font-size: 20px;
+    font-weight: 900;
+    color: #000000;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10px;
+}
+
+.products a p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #777777;
+    margin-left: 10px;
+}
+
+.products a span.price{
+    font-size: 20px;
+    font-weight: 900;
+    color: #ff3228;
+    margin-left: 15px;
+}
+
+.products a span.oldprice{
+    text-decoration: line-through;
+}
+
+.products a :hover{
+    cursor: pointer;
+}

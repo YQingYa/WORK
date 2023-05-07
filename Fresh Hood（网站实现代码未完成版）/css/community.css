@@ -1,0 +1,104 @@
+/* header 样式 */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+header h1 {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+header nav {
+	margin-top: 10px;
+}
+
+header ul {
+	list-style: none;
+}
+
+header ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+header ul li:last-child {
+	margin-right: 0;
+}
+
+header ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+header ul li a:hover {
+	text-decoration: underline;
+}
+
+/* main 样式 */
+main {
+	padding: 20px;
+}
+
+main h2 {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.sidebar {
+	float: left;
+	width: 300px;
+	margin-right: 20px;
+}
+
+.sidebar h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.sidebar ul {
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+.sidebar ul li {
+	margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+	color: #333;
+	text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+	text-decoration: underline;
+}
+
+.content {
+	float: left;
+	width: calc(100% - 320px);
+}
+
+.topic {
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+}
+
+.topic h3 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.topic p {
+	margin-bottom: 10px;
+}
+
+.meta {
+	color: #999;
+	font-size: 14px;
+}

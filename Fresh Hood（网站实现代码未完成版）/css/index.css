@@ -1,0 +1,302 @@
+@charset 'UTF-8';
+
+.content{
+    width: 1580px;
+    position: relative;
+    display: flex;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+}
+
+    .detail {
+        position: relative;
+        width: 2000px;
+        height: 400px;
+        overflow: hidden;
+        display: flex;
+        margin-left: 10%;
+    }
+
+    .left ul{
+        position: relative;
+        width: 210px;
+        height: 400px;
+        overflow: hidden;
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+    }
+
+    .left ul li{
+        height: 50px;
+        position: relative;
+        padding: 0px;
+        width: 210px;
+        background-color: #FFFFFF;
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+    }
+    
+    .left ul li a{
+        position: relative;
+        display: inline-block;
+        width: 210px;
+        overflow: hidden;
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px;
+        font-weight: 900;
+        margin: 0px;
+        color: #ACB1C6;
+    }
+
+    .left ul li a:hover{
+        color: #8DCC78;
+        background-color: #ACB1C6;
+    }
+
+    .right{
+        position: absolute;
+        left: 211px;
+        width: 1380px;
+        height: 400px;
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+        z-index: 999;
+        display: none;
+    }
+
+    .left:hover+.right{
+        display: inline-block;
+    }
+
+    .right:hover{
+        display: inline-block;
+    }
+
+    .right dl{
+        position: absolute;
+        width: auto;
+        height: 350px;
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+        background-color: #FFFFFF;
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+        display: inline-block;
+        z-index: 999;
+    }
+
+    .right dl dt a{
+        font-size: 14px;
+        font-weight: 600;
+        width: 60px;
+        height: 50px;
+        overflow: hidden;
+        text-decoration: none;
+        line-height: 50px;
+        margin: 0px;
+        flex-shrink: 0;
+        color: #8DCC78;
+    }
+
+    .right dl dd a{
+        white-space: nowrap;
+        font-weight: 400;
+        font-size: 14px;
+        text-decoration: none;
+        color: #ACB1C6;
+        text-align: left;
+        padding: 10px;
+    }
+    
+    .right dl dd a:hover{
+        color: #8DCC78;
+    }
+
+    .right dt a:hover{
+        color: #eb2525;
+    }
+
+    .graph img{
+        height:350px;
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+    }
+
+    .user{
+        position: relative;
+        width: 400px;
+        height: 100px;
+        overflow: hidden;
+        display: flex;
+        background-color: #FFFFFF;
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+    }
+
+    .user a{
+        position: relative;
+        display: flex;
+        width: 400px;
+        height: 100px;
+    }
+    .user li{
+        position: relative;
+        height: 100px;
+        width: 400px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #ACB1C6;
+        text-decoration: none;
+        display:inline-block;
+        text-align: center;
+        line-height: 100px;
+        margin: 0px;
+    }
+
+    .user img{
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        padding: 20px;
+    }
+
+    .announcement{
+        position: relative;
+        width: 400px;
+        height: 250px;
+        overflow: hidden;
+        display: flex;
+        background-color: #FFFFFF;
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+    }
+
+    .announcement a{
+        position: absolute;
+        display: inline-block;
+        width: 400px;
+        height: 80px;
+        text-align: center;
+        line-height: 80px;
+        color: #ACB1C6;
+        font-size: 24px;
+        font-weight: 900;
+        text-decoration: none;
+    }
+
+    .announcement li{
+        position: relative;
+        display: inline-block;
+        top: 70px;
+        width: 400px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        color: #eb2525;
+        font-size: 14px;
+        font-weight: 900;
+        text-decoration: none;
+    }
+
+.marketing{
+    position: relative;
+    width: 1580px;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+}
+
+    .banner{
+        position: relative;
+        width: 1580px;
+        height: 100px;
+        overflow: hidden;
+        display: inline-block;
+        margin-left: 50%;
+        transform: translate(-50%,0);
+        margin-top: 10px;
+    }
+
+    .banner img{
+        width: 1580px;
+        height: 100px;
+    }
+
+    .marketing1{
+        position: relative;
+        width: 1280px;
+        height: 400px;
+        overflow: hidden;
+        display: flex;
+        background-color: #FFFFFF;
+        margin-left: 50%;
+        margin-top: 10px;
+        transform: translate(-50%,0);
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+    }
+    
+    .marketing1 li::marker{
+        content: none;
+    }
+
+    .marketing1 li, .introduce{
+        position: relative;
+        display: inline-block;
+        width: 250px;
+        height: 400px;
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+    }
+
+    .marketing1 a{
+        position: relative;
+        display: inline-block;
+        height: 25px;
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+        line-height: 25px;
+        color: #8DCC78;
+        background-color: #FFFFFF;
+        border: 1px solid #8DCC78;
+        font-size: 12px;
+        font-weight: 400;
+        text-decoration: none;
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+    }
+
+    .marketing1 a:hover{
+        color: #FFFFFF;
+        background-color: #8DCC78;
+    }
+
+    .marketing1 img{
+        position: relative;
+        width: 250px;
+        height: 350px;
+    }
+
+    .product,.product li{
+        position: relative;
+        width: 1020px;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .product a{
+        position: relative;
+        display: inline-block;
+        width: 150px;
+        height: 180px;
+        line-height: 180px;
+        text-decoration: none;
+        margin-left: 30px;
+    }
+
+    .product img{
+        position: relative;
+        width: 150px;
+        height: 180px;
+    }

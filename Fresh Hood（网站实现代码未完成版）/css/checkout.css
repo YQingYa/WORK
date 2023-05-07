@@ -1,0 +1,193 @@
+.checkout {
+    position:relative;
+    width: 1580px;
+    translate: translate(0,0);
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    background-color: #ffffff;
+}
+
+.title{
+    margin-left: 150px;
+    padding: 30px;
+}
+
+.address, .pay, .delivery{
+    margin-left: 150px;
+    margin-right: 150px;
+    border-top: 1px solid #ACB1C6;
+    padding: 30px;
+}
+
+.addressinfo,.payway,.deliveryway{
+    display: flex;
+    align-items: center;
+}
+
+.addressinfo p{
+    margin: 0px;
+}
+
+.address h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.address h2{
+    font-size: 16px;
+    font-weight: 600;
+    color: #ACB1C6;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.addressinfo a, .firstpayway a, .firstdeliveryway a{
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid #8DCC78;
+    margin-right: 40px;
+    color: #8DCC78;
+    padding: 5px;
+}
+
+.morepayway a, .moredeliveryway a{
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid #ACB1C6;
+    padding: 5px;
+    margin-right: 40px;
+}
+
+.edit a{
+    margin-left: 20px;
+}
+
+.more_address, .more_payway, .more_deliveryway{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.more_address a, .more_payway a, .more_deliveryway a{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.detail{
+    border: 1px solid #ACB1C6;
+    display: none;
+}
+
+.more:hover .detail{
+    display: block;
+}
+
+.predict h1{
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.predict p{
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ACB1C6;
+}
+
+a:hover{
+    cursor: pointer;
+    color: #8DCC78;
+}
+
+.ptitle{
+    border-top: 1px solid #ACB1C6;
+    display: flex;
+    margin-left: 150px;
+    padding: 20px;
+}
+
+.ptitle h1, .ptitle h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.ptitle h1{
+    margin-left: 45px;
+}
+
+.ptitle h2{
+    margin-left: 800px;
+}
+
+.product1{
+    display: inline-flex;
+    background-color: #ffffff;
+    width: 1300px;
+    height: 200px;
+    margin-left: 140px;
+}
+
+.product1 h1{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.product1 p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #ACB1C6;
+}
+
+.productinfo{
+    width: 500px;
+    margin: 50px;
+}
+
+.productprice{
+    margin-top: 45px;
+    margin-left: 140px;
+}
+
+.total,.deliveryfee,.discount{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 120px;
+}
+
+.total p, .deliveryfee p, .discount p{
+    font-size: 20px;
+    font-weight: 900;
+    width: 100px;
+    margin-left: 100px;
+}
+
+.total h1,.deliveryfee h1,.discount h1{
+    font-size: 20px;
+    font-weight: 900;
+    color: #ACB1C6;
+}
+
+.confirm{
+    padding: 25px;
+    border-top: 1px solid #ACB1C6;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.confirmed{
+    margin-left: 850px;
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    border: 15px solid #ff3228;
+    background-color: #ff3228;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+.confirmed a{
+    font-size: 25px;
+    font-weight: 900;
+    color: #ffffff;
+}

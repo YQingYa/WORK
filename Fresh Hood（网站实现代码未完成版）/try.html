@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      .choose{
+        width: 400px;
+        height: 600px;
+        float: left;
+        margin:50px 0 0 50px;
+      }
+      .content{
+        width: 300px;
+        height: 400px;
+        border: 1px solid gray;
+        position: relative;
+      }
+  
+      .content img {
+        width: 300px;
+        height: 400px;
+      }
+      #listshow{
+        width: 400px;
+        height: 100px;
+        margin-top: 20px;
+      }
+      #listshow li{
+        width: 70px;
+        height: 100px;
+        float: left;
+        border:1px solid #666;
+      }
+      #listshow li img{
+        width: 68px;
+        height: 100px;
+      }
+      #listshow .selected{
+        border: 2px solid brown;
+      }
+      .larger{
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        border:1px solid #666;
+
+        top: 50px;
+        left: 500px;
+        float: left;
+        overflow: hidden;
+        display: none;
+      }
+      .big{
+        width: 800px;
+        height: 800px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .shadow{
+        width: 150px;
+        height: 150px;
+        background-color: rgba(240, 20, 141, 0.8);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        display: none;
+      }
+    </style>
+</head>
+<body>
+  <div class="choose">
+    <div class="content">
+      <img src="https://pics4.baidu.com/feed/42a98226cffc1e174edefa0c5eb41005738de951.jpeg?token=b6b92f5cffbe974bee31f24d5a79264c" id = "small">
+      <div class="shadow"></div>
+    </div>
+    <ul id = "listshow">
+      <li class="selected">
+        <img src="https://pics4.baidu.com/feed/42a98226cffc1e174edefa0c5eb41005738de951.jpeg?token=b6b92f5cffbe974bee31f24d5a79264c" 
+        data-img = "https://pics4.baidu.com/feed/42a98226cffc1e174edefa0c5eb41005738de951.jpeg?token=b6b92f5cffbe974bee31f24d5a79264c" 
+        alt="">
+      </li>
+      <li>
+        <img src="http://pics7.baidu.com/feed/2cf5e0fe9925bc315eba913653fb6bb7ca137067.jpeg?token=01a32232b4d1e5a82bf7eacd0bacdba3"
+         data-img = "http://pics7.baidu.com/feed/2cf5e0fe9925bc315eba913653fb6bb7ca137067.jpeg?token=01a32232b4d1e5a82bf7eacd0bacdba3" 
+         alt="">
+      </li>
+      <li>
+        <img src="http://pics4.baidu.com/feed/0eb30f2442a7d93383ed7de9a16f371572f00189.jpeg?token=323d4b7ae1e676b2871943227df5c51a" 
+        data-img = "http://pics4.baidu.com/feed/0eb30f2442a7d93383ed7de9a16f371572f00189.jpeg?token=323d4b7ae1e676b2871943227df5c51a" 
+        alt="">
+      </li>
+      <li>
+        <img src="https://pics2.baidu.com/feed/eaf81a4c510fd9f9aafbbed82809322c2934a4ba.jpeg?token=89d457ae923ab8e9af0385b9322e05d0" 
+        data-img = "https://pics2.baidu.com/feed/eaf81a4c510fd9f9aafbbed82809322c2934a4ba.jpeg?token=89d457ae923ab8e9af0385b9322e05d0" 
+        alt="">
+      </li>
+    </ul>
+  </div>
+  <div class="larger">
+    <img class = "big" src="https://pics4.baidu.com/feed/42a98226cffc1e174edefa0c5eb41005738de951.jpeg?token=b6b92f5cffbe974bee31f24d5a79264c" >
+  </div>
+</body>
+<script type="text/javascript">
+  let showli = document.getElementsByTagName('li');
+  let content = document.querySelector('.content');
+  let larger = document.querySelector('.larger');
+  let shadow = document.querySelector('.shadow');
+  let bigImg = document.querySelector('.big');
+
+
+  shadowW=shadow.style.width?shadow.style.width:document.defaultView.getComputedStyle(shadow,null).width;
+  shadowW=parseInt(shadowW);
+  shadowH=shadow.style.height?shadow.style.height:document.defaultView.getComputedStyle(shadow,null).height;
+  shadowH=parseInt(shadowH);
+
+  contentW = content.style.width? content.style.width:document.defaultView.getComputedStyle(content,null).width;
+  contentW = parseInt( contentW);
+  contentH = content.style.height? content.style.height:document.defaultView.getComputedStyle(content,null).height;
+  contentH = parseInt( contentH);
+
+  // 考虑content的margin
+  chooseMarginL = content.style.marginLeft?   content.style.marginLeft:document.defaultView.getComputedStyle(content,null).marginLeft;
+  chooseMarginL = parseInt(chooseMarginL);
+  chooseMarginT = content.style.marginTop? content.style.marginTop:document.defaultView.getComputedStyle(content,null).marginTop;
+  chooseMarginT = parseInt(chooseMarginT);
+ 
+
+  bigImgW=bigImg.style.width?bigImg.style.width:document.defaultView.getComputedStyle(bigImg,null).width;
+  bigImgW=parseInt(bigImgW);
+  bigImgH=bigImg.style.height?bigImg.style.height:document.defaultView.getComputedStyle(bigImg,null).height;
+  bigImgH=parseInt(bigImgH);
+
+  largerW=larger.style.width?larger.style.width:document.defaultView.getComputedStyle(larger,null).width;
+  largerW=parseInt(largerW);
+  largerH=larger.style.height?larger.style.height:document.defaultView.getComputedStyle(larger,null).height;
+  largerH=parseInt(largerH);
+
+
+  for(let i = 0;i<showli.length;i++){
+    let showitem = showli[i];
+    showitem.onmouseover = showitem.onclick = function(e){
+      let evt = window.event||e;
+      for(let j =0;j<showli.length;j++){
+        showli[j].className = "";
+      }
+      let showimg = this.getElementsByTagName("img")[0];
+      let imgsrc = showimg.src;
+      small.src = imgsrc;
+      let bigsrc = showimg.getAttribute("data-img");
+      bigImg.src = bigsrc;
+      this.className = "selected";
+    }
+  }
+  
+  content.onmousemove = function (e) {
+    let evt = window.event||e;
+
+    larger.style.display = "block";
+    shadow.style.display = "block";
+    let clientX = parseInt(evt.clientX);
+    let clientY = parseInt(evt.clientY);
+    
+    // clientX未计入scroll的值，需考虑scroll的值，当然也可以直接使用pageX代替
+    let scrollLeft = document.documentElement.scrollLeft||document.body.scrollLeft;
+    scrollLeft = parseInt(scrollLeft)
+    let scrollTop = document.documentElement.scrollTop||document.body.scrollTop;
+    scrollTop = parseInt(scrollTop)
+
+    let X = clientX + scrollLeft - chooseMarginL - shadow.offsetWidth/2;
+    let Y = clientY + scrollTop - chooseMarginT - shadow.offsetHeight/2;
+
+     // 考虑鼠标在被放大区域的最大值
+    maxX = contentW - shadow.offsetWidth
+    maxY = contentH - shadow.offsetHeight
+
+    if(X<=0){ X = 0;}
+    if(X>=maxX){X = maxX;}
+    if(Y<=0){Y = 0;}
+    if(Y>=maxY){ Y = maxY;}
+    // 防止遮罩层粘滞，跟随鼠标一起滑出大图位置
+    let bigX = X * bigImgW/contentW;
+    let bigY = Y * bigImgH/contentH;
+
+
+    // 优于方法图形和shadow的宽高比例不一致，防止出现空白，需要控制放大后的最大位置
+    if (bigY > bigImgH - largerH){bigY = bigImgH - largerH}
+    if (bigX > bigImgW - largerW){bigX = bigImgW - largerW}
+    
+    // bigX / bigW = X / contentW,主图和遮罩层之间存在两倍关系，放大图和原图之间也有两倍关系
+    shadow.style.left = X+"px";
+    shadow.style.top = Y+"px";
+    console.log(X,Y,bigX,bigY)
+
+    bigImg.style.left = -bigX+"px";
+    bigImg.style.top = -bigY+"px";
+
+  }
+</script>
+
+</html>
